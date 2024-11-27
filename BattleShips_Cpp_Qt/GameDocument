@@ -1,0 +1,24 @@
+What will game do
+
+    Game Menu
+        Pre Game Setup
+        *Two grids showing player and enemy boards
+            -Grid class with collected cells and attibutes
+            -Grid buttons should be stylised correctly, with sharp corners
+            -Ship art should be created for hit, and intact
+        *There will be a ready button after placing ships
+        * 4 Ships with sized 5-4-3-3-2
+        *they will be showing on below player board
+        *With drag&drop player will place the ships and when hit "ready" button game will start
+        *When hit ready, the wsame szied ships will be placed randomly on enemy board
+
+        In game Setup
+        *Player will start by shooting one grid on enemy ship and if hit, the turn will continue
+        *When missed the turn will be sent to enemy and after thinking for 3 seconds, enemy will hit a random unhit cell
+            -Enemy should collect cells that are hit, for avoiding hit to the same cell
+        *When enemy hits, enemy will try to hit an adjacent cell
+        *When enemy misses the turn will be sent to player and game will continue untill one of the players will lose all ships.
+
+
+Object hierarchy
+    MainWİndow->Grid->Custombutton

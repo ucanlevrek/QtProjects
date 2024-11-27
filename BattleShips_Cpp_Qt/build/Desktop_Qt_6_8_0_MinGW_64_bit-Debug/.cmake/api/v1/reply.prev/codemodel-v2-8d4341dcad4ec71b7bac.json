@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-99b827fda8057b74aec7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BattleShips_Cpp_Qt",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BattleShips_Cpp_Qt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BattleShips_Cpp_Qt-Debug-1a8bc2cacd0d457eac7c.json",
+					"name" : "BattleShips_Cpp_Qt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BattleShips_Cpp_Qt_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BattleShips_Cpp_Qt_autogen-Debug-8ae4f766443b1f421af4.json",
+					"name" : "BattleShips_Cpp_Qt_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BattleShips_Cpp_Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BattleShips_Cpp_Qt_autogen_timestamp_deps-Debug-428935b40e59ee0269a7.json",
+					"name" : "BattleShips_Cpp_Qt_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+		"source" : "D:/_Programming/QtProjects/BattleShips_Cpp_Qt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

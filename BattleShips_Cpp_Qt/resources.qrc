@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>maps/playerButtonIcon.png</file>
+        <file>maps/enemyButtonIcon.png</file>
+        <file>maps/BG.gif</file>
+        <file>maps/PlayerBorder.png</file>
+    </qresource>
+</RCC>
