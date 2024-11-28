@@ -1,9 +1,8 @@
 #include "custombutton.h"
 
-customButton::customButton(QWidget *parent, bool _isPlayer) : QPushButton(parent){
+customButton::customButton(QWidget *parent) : QPushButton(parent){
     setFixedSize(40,40);
     setStyleSheet("margin:2px; border:2px;");
-    customButton::isPlayer = _isPlayer;
     setButtonState(Empty);
     updateAppearance();
 }

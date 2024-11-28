@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QGridLayout>
 #include "custombutton.h"
 
 class Grid
@@ -11,7 +12,7 @@ public:
     Grid();
 
     customButton *cells[10][10];
-
+    QGridLayout *layout;
     void clear();
     void enable();
     void disable();

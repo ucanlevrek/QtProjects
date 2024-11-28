@@ -9,8 +9,7 @@
 #include <QVector>
 #include <QMovie>
 #include <QLabel>
-#include "custombutton.h"
-
+#include "grid.h"
 
 class MainWindow : public QMainWindow
 {
@@ -43,9 +42,12 @@ private:
     QMovie *backgroundGIF;
     QLabel *bgProcessLabel;
 
-    QGridLayout *enemyGridLayout;
-    QGridLayout *playerGridLayout;
+
     QGridLayout *gameLayout;
+
+    Grid *playerGrid;
+    Grid *enemyGrid;
+
 
 
     //Ship layout to show below player grid before start
@@ -59,9 +61,6 @@ private:
 
     void setupUIElements();
     void setupGrids();
-
-    customButton *playerButtons[10][10];
-    customButton *enemyButtons[10][10];
 
     void enterPlacementMode();
     void handlePlacementClick(int row, int col);

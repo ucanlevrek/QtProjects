@@ -11,7 +11,7 @@ class customButton : public QPushButton {
 
 
 public:
-    customButton(QWidget *parent= nullptr, bool isPlayer = true);
+    customButton(QWidget *parent= nullptr);
     enum CellState{
         Hidden,
         Empty,
@@ -26,7 +26,6 @@ public:
 private:
     CellState currentState;
     void updateAppearance();
-    bool isPlayer;
 };
 
 #endif // CUSTOMBUTTON_H
