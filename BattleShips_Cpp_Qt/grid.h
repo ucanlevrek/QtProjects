@@ -1,30 +1,26 @@
 #ifndef GRID_H
 #define GRID_H
 
-
+#include <QObject>
+#include <QWidget>
+#include "custombutton.h"
 
 class Grid
 {
 public:
     Grid();
 
+    customButton *cells[10][10];
 
-    enum State{
-        Empty,
-        Ship,
-        Miss,
-        Hit
-    };
+    void clear();
+    void enable();
+    void disable();
 
+    void hitCell(int row, int col);
 
-    void setState(int row, int col, State state);
-    State getCellState(int row, int col);
-    void initialize();
-    void placeShip(int row, int col);
-    State cellStates[10][10];
+    void placeRandomShips();
 
-private:
-
+    void initializeGrid();
 };
 
 #endif // GRID_H

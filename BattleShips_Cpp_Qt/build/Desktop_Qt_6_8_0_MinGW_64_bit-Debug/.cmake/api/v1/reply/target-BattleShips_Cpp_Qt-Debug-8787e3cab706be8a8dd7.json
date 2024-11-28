@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 68,
+				"line" : 69,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 51,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
@@ -365,8 +365,8 @@
 				0,
 				1,
 				2,
-				6,
-				9,
+				7,
+				10,
 				13
 			]
 		}
@@ -491,8 +491,8 @@
 				0,
 				1,
 				2,
-				6,
-				9,
+				7,
+				10,
 				13
 			]
 		},
@@ -501,8 +501,8 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5,
-				8,
+				6,
+				9,
 				11
 			]
 		},
@@ -511,8 +511,8 @@
 			"sourceIndexes" : 
 			[
 				4,
-				7,
-				10,
+				5,
+				8,
 				12
 			]
 		},
@@ -558,17 +558,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "grid.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "grid.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
 			"path" : "GameDocument",
 			"sourceGroupIndex" : 2
 		},
@@ -587,6 +576,17 @@
 			"backtrace" : 4,
 			"path" : "resources.qrc",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "grid.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "grid.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

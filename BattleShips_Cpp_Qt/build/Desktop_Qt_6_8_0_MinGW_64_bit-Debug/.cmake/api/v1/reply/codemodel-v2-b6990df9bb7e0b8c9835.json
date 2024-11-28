@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-99b827fda8057b74aec7.json",
+					"jsonFile" : "directory-.-Debug-88f324b6e056fa5fb4df.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "BattleShips_Cpp_Qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-BattleShips_Cpp_Qt-Debug-1a8bc2cacd0d457eac7c.json",
+					"jsonFile" : "target-BattleShips_Cpp_Qt-Debug-8787e3cab706be8a8dd7.json",
 					"name" : "BattleShips_Cpp_Qt",
 					"projectIndex" : 0
 				},

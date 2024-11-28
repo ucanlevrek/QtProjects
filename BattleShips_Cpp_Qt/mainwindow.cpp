@@ -2,7 +2,7 @@
 
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent) {
+    : QMainWindow(parent), currentState(Placement) {
     setupBackground();
     setupUIElements();
     setupGrids();
@@ -31,7 +31,7 @@ void MainWindow::setupBackground(){
 void MainWindow::setupUIElements(){
     setFixedSize(900,600);
     bgProcessLabel->setGeometry(0,0,width(),height());
-
+    stateLabel = new QLabel();
     //Create Layouts
     gameLayout = new QGridLayout();
     playerGridLayout = new QGridLayout();
@@ -49,8 +49,6 @@ void MainWindow::setupUIElements(){
 }
 
 void MainWindow::setupShips(){
-
-
 
     for(int id = 0; id<5; ++id){
         int size = shipSizes[id];
@@ -71,16 +69,18 @@ void MainWindow::setupGrids(){
         for(int col=0; col<10; ++col){
             playerButtons[row][col] = new customButton(this, true);
             playerButtons[row][col]->setIconSize(QSize(40,40));
+            playerButtons[row][col]->setEnabled(false);
             playerGridLayout->addWidget(playerButtons[row][col], row, col);
+
 
             connect(playerButtons[row][col], &QPushButton::clicked, [this, row, col](){
                 handlePlayerButtonClick(row, col);
             });
 
-
             enemyButtons[row][col] = new customButton(this, false);
             enemyButtons[row][col]->setIconSize(QSize(40,40));
             enemyButtons[row][col]->setButtonState(customButton::Hidden);
+            enemyButtons[row][col]->setEnabled(false);
             enemyGridLayout->addWidget(enemyButtons[row][col], row, col);
 
             connect(enemyButtons[row][col], &QPushButton::clicked, [this, row, col](){
@@ -95,20 +95,20 @@ void MainWindow::initializeUI(){
 
 
     //Add to layouts
-    gameLayout->addWidget(startButton, 0, 0);
-    gameLayout->addWidget(restartButton, 0, 1);
-    gameLayout->addLayout(playerGridLayout, 1, 0);
-    gameLayout->addLayout(enemyGridLayout, 1, 1);
+    gameLayout->addWidget(stateLabel, 0, 0);
+    gameLayout->addWidget(startButton, 1, 0);
+    gameLayout->addWidget(restartButton, 1, 1);
+    gameLayout->addLayout(playerGridLayout, 2, 0);
+    gameLayout->addLayout(enemyGridLayout, 2, 1);
 
 
-    gameLayout->addWidget(randomPlaceButton, 2, 0);
-    gameLayout->addLayout(shipLayout, 3, 0);
+    gameLayout->addWidget(randomPlaceButton, 3, 0);
+    gameLayout->addLayout(shipLayout, 4, 0);
 
 
     gameLayout->setSizeConstraint(QLayout::SetMaximumSize);
     gameLayout->setAlignment(Qt::AlignCenter);
 
-    setStyleSheet("QPushButton#customButton:hover {color: yellow};");
 
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(gameLayout);
@@ -132,4 +132,9 @@ void MainWindow::handleEnemyButtonClick(int row, int col){
     enemyButtons[row][col]->setFlat(true);
     enemyButtons[row][col]->setIcon(QIcon());
     enemyButtons[row][col]->setDisabled(true);
+}
+
+
+void MainWindow::restartGame(){
+
 }

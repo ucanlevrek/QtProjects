@@ -23,10 +23,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(BattleShips_Cpp_Qt
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        grid.h grid.cpp
+
         GameDocument
         custombutton.h custombutton.cpp
         resources.qrc
+        grid.h grid.cpp
 
 
     )

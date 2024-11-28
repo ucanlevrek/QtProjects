@@ -10,6 +10,7 @@ customButton::customButton(QWidget *parent, bool _isPlayer) : QPushButton(parent
 
 
 void customButton::setButtonState(CellState state){
+
     currentState = state;
     updateAppearance();
 }
