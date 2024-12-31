@@ -25,9 +25,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
         GameDocument
-        custombutton.h custombutton.cpp
+        gridButton.h gridButton.cpp
         resources.qrc
         grid.h grid.cpp
+        playergrid.h playergrid.cpp
+        enemygrid_ai.h enemygrid_ai.cpp
+        shipButton.h shipButton.cpp
+
 
 
     )

@@ -1,5 +1,6 @@
 BattleShips_Cpp_Qt_autogen/timestamp: \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.8.0/mingw_64/include/QtCore/QPoint \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20algorithm.h \
 	C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
@@ -580,12 +581,18 @@ BattleShips_Cpp_Qt_autogen/timestamp: \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
-	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.cpp \
-	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.h \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/enemygrid_ai.cpp \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/enemygrid_ai.h \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.cpp \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.h \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.cpp \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/main.cpp \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.cpp \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.h \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.cpp \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.h \
 	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/resources.qrc \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.cpp \
+	D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.h \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

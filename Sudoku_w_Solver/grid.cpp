@@ -12,8 +12,6 @@ Grid::Grid(QWidget *parent)
 
     //TEST!!!!
 
-    /*
-
     cellValues initCells;
 
     QFile file(":/testData/rsrcs/newCSV.csv");
@@ -34,10 +32,6 @@ Grid::Grid(QWidget *parent)
         b.append(intList);
     }
 
-    while(b.length() > 9){
-        b.removeLast();
-    }
-
     for(int r=0 ; r<9 ; ++r){
         for(int c=0 ; c<9 ; ++c){
             int nval = b[r][c];
@@ -49,7 +43,7 @@ Grid::Grid(QWidget *parent)
 
     //--------------
 
-    */
+
 }
 
 
