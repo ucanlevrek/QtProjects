@@ -9,7 +9,7 @@ Grid::Grid(QWidget *parent)
     Initialize();
 
 
-
+/*
     //TEST!!!!
 
     cellValues initCells;
@@ -42,7 +42,7 @@ Grid::Grid(QWidget *parent)
     setCellValues();
 
     //--------------
-
+*/
 
 }
 
