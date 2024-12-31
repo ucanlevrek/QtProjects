@@ -267,9 +267,9 @@
 	"HEADERS" : 
 	[
 		[
-			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.h",
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/enemygrid_ai.h",
 			"MU",
-			"EWIEGA46WW/moc_custombutton.cpp",
+			"EWIEGA46WW/moc_enemygrid_ai.cpp",
 			null
 		],
 		[
@@ -279,9 +279,27 @@
 			null
 		],
 		[
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h",
+			"MU",
+			"EWIEGA46WW/moc_gridButton.cpp",
+			null
+		],
+		[
 			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.h",
+			"MU",
+			"EWIEGA46WW/moc_playergrid.cpp",
+			null
+		],
+		[
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.h",
+			"MU",
+			"EWIEGA46WW/moc_shipButton.cpp",
 			null
 		]
 	],
@@ -357,14 +375,29 @@
 	"SOURCES" : 
 	[
 		[
-			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.cpp",
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/enemygrid_ai.cpp",
 			"MU",
 			null
 		],
 		[ "D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.cpp", "MU", null ],
+		[
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.cpp",
+			"MU",
+			null
+		],
 		[ "D:/_Programming/QtProjects/BattleShips_Cpp_Qt/main.cpp", "MU", null ],
 		[
 			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.cpp",
 			"MU",
 			null
 		]

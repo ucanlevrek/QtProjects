@@ -1,8 +1,18 @@
 <RCC>
     <qresource prefix="/images">
-        <file>maps/playerButtonIcon.png</file>
         <file>maps/enemyButtonIcon.png</file>
         <file>maps/BG.gif</file>
-        <file>maps/PlayerBorder.png</file>
+        <file>maps/enemy_hidden.png</file>
+        <file>maps/enemy_hit.png</file>
+        <file>maps/enemy_miss.png</file>
+        <file>maps/player_hidden.png</file>
+        <file>maps/player_hit.png</file>
+        <file>maps/player_miss.png</file>
+    </qresource>
+    <qresource prefix="/shipArt">
+        <file>maps/ShipSized_2_Player.png</file>
+        <file>maps/ShipSized_3_Player.png</file>
+        <file>maps/ShipSized_4_Player.png</file>
+        <file>maps/ShipSized_5_Player.png</file>
     </qresource>
 </RCC>

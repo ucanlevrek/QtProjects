@@ -1,6 +1,7 @@
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/BattleShips_Cpp_Qt_autogen/EWIEGA46WW/moc_mainwindow.cpp: D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.h \
   D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/BattleShips_Cpp_Qt_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QPoint \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QVector \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20algorithm.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
@@ -405,4 +406,8 @@ D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bi
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.h
+  D:/_Programming/QtProjects/BattleShips_Cpp_Qt/enemygrid_ai.h \
+  D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.h \
+  D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h \
+  D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.h \
+  D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.h
