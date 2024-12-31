@@ -9,8 +9,8 @@
 #include <QVector>
 #include <QMovie>
 #include <QLabel>
-#include "grid.h"
-
+#include "playergrid.h"
+#include "enemygrid_ai.h"
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -27,13 +27,11 @@ public:
     GameState currentState;
 
 private:
-    QLabel *stateLabel;
     // Start-Restart Buttons
-    QPushButton *startButton;
-    void startGame();
 
+    QPushButton *startButton;
     QPushButton *restartButton;
-    void restartGame();
+
 
     QPushButton *randomPlaceButton;
     void randomlyPlaceShips();
@@ -45,31 +43,24 @@ private:
 
     QGridLayout *gameLayout;
 
-    Grid *playerGrid;
-    Grid *enemyGrid;
+    PlayerGrid *playerGrid;
+    EnemyGrid_AI *enemyGrid;
 
-
-
-    //Ship layout to show below player grid before start
-    QGridLayout *shipLayout;
-    QVector<QPushButton*> shipButtons;
-    QVector<int> shipSizes = {2,3,3,4,5};
 
 
     //SetupFunctions
-    void setupShips();
+
+    void startBattle();
+    void startPlacement();
 
     void setupUIElements();
     void setupGrids();
 
-    void enterPlacementMode();
-    void handlePlacementClick(int row, int col);
 
-    void handleEnemyButtonClick(int row, int col);
-    void handlePlayerButtonClick(int row, int col);
     void initializeUI();
     void setupBackground();
-    //void initializeGame()
+
+
 };
 
 #endif // MAINWINDOW_H

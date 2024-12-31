@@ -4,24 +4,41 @@
 #include <QObject>
 #include <QWidget>
 #include <QGridLayout>
-#include "custombutton.h"
+#include "gridButton.h"
+#include "shipButton.h"
+#include <QVector>
 
-class Grid
-{
+class Grid : public QWidget
+{   Q_OBJECT
+
 public:
-    Grid();
+    explicit Grid(QWidget *parent=nullptr);
 
-    customButton *cells[10][10];
+    GridButton *cells[10][10];
     QGridLayout *layout;
     void clear();
-    void enable();
-    void disable();
+
 
     void hitCell(int row, int col);
-
     void placeRandomShips();
+    void handleClick(GridButton *cell);
 
-    void initializeGrid();
+    void initializeGrid(QWidget *parent);
+    virtual void setCellArt(GridButton *cellButton);
+
+    bool validatePlacement(ShipButton *ship, int row, int col);
+    void placeShip(ShipButton *ship, int row, int col);
+
+    void initializeShips();
+
+    void shipDragAndDrop(bool isActive);
+
+    QVector<ShipButton*> ships;
+
+    void adjustGridRotation(ShipButton *ship);
+
+    void updateCellStates();
 };
 
 #endif // GRID_H
+
