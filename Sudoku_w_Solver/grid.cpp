@@ -9,7 +9,7 @@ Grid::Grid(QWidget *parent)
     Initialize();
 
 
-/*
+
     //TEST!!!!
 
     cellValues initCells;
@@ -42,7 +42,7 @@ Grid::Grid(QWidget *parent)
     setCellValues();
 
     //--------------
-*/
+
 
 }
 
@@ -390,6 +390,7 @@ bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial){
         if(solvedCells != 81 && isValid){
             qDebug() << "brute solve";
             bruteForceSolve(findCandidates(), testValues);
+            return false;
         }
 
 
