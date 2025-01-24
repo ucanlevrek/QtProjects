@@ -94,5 +94,3 @@ void SudokuButton::removePossibility(int rmv){
     }
 
 }
-
-

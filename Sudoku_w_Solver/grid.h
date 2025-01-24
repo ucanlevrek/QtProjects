@@ -45,7 +45,7 @@ public:
     //Btn functions
     void checkRepeated();
     void startSolve();
-    bool bruteForceSolve(QVector<candidate> cndts, cellValues initial);
+    bool bruteForceSolve(QVector<candidate> cndts, cellValues initial, int lvl);
 
     //Brute force solve functions
     QVector<candidate> findCandidates();

@@ -365,7 +365,6 @@ D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/BattleShips_Cpp_Qt_autogen/moc_predefs.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.h
-D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.cpp
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/QObject
@@ -745,7 +744,7 @@ D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.h
-D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.cpp
+D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.cpp
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/QObject
@@ -1161,6 +1160,7 @@ D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/mainwindow.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.h
+D:/_Programming/QtProjects/BattleShips_Cpp_Qt/grid.cpp
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/QObject
@@ -1543,6 +1543,7 @@ D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/shipButton.h
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/custombutton.cpp
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/main.cpp
+D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.cpp
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/QObject
@@ -1909,7 +1910,6 @@ D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/BattleShips_Cpp_Qt_autogen/moc_predefs.h
  mdp:D:/_Programming/QtProjects/BattleShips_Cpp_Qt/gridButton.h
-D:/_Programming/QtProjects/BattleShips_Cpp_Qt/playergrid.cpp
 D:/_Programming/QtProjects/BattleShips_Cpp_Qt/enemygrid_ai.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.8.0/mingw_64/include/QtCore/QObject

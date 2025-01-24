@@ -326,13 +326,12 @@ void Grid::startSolve(){
     cellValues initialValues = getCellValues();
     QVector<candidate> candidates = findCandidates();
 
-    bruteForceSolve(candidates, initialValues);
+    bruteForceSolve(candidates, initialValues, 0);
 
 
 }
 
-bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial){
-
+bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial, int lvl){
     cellValues testValues = getCellValues();
 
     int cndtCt = cndts.length();
@@ -362,7 +361,9 @@ bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial){
                 noRepeats = true;
             }
         }
-        qDebug() << posx << posy << cndt.value;
+
+
+        qDebug() << posx << posy << cndt.value <<"lvl: " << lvl;
 
 
         //if already solved
@@ -371,7 +372,7 @@ bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial){
 
         //eveything is okay after hit
         if(solvedCells == 81 && isValid){
-            qDebug() <<"solved";
+            qDebug() <<"solved at lvl: " <<lvl ;
             emit solved();
             return true;
         }
@@ -379,6 +380,7 @@ bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial){
         //wrong solve
         if(!isValid){
             setGridFromValues(initial);
+            qDebug() << "non-Valid, and level is: " << lvl;
             if(i == cndtCt-1){
                 return false;
             }else{
@@ -388,12 +390,10 @@ bool Grid::bruteForceSolve(QVector<candidate> cndts, cellValues initial){
 
         //not everything is solved but grid is going valid
         if(solvedCells != 81 && isValid){
-            qDebug() << "brute solve";
-            bruteForceSolve(findCandidates(), testValues);
+            qDebug() << "brute solve lvl" << lvl+1;
+            bruteForceSolve(findCandidates(), testValues, lvl+1);
             return false;
         }
-
-
     }
 
     return false;
@@ -419,6 +419,8 @@ QVector<Grid::candidate> Grid::findCandidates(){
     }
     return candidates;
 }
+
+
 
 int Grid::getSolvedCount(){
     //if already solved
